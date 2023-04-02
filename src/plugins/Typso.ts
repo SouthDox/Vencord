@@ -1,5 +1,15 @@
+import definePlugin from "@utils/types";
 
-
+export default definePlugin({
+    name: "Epic Plugin",
+    description: "This plugin is absolutely epic",
+    authors: [mer
+        {
+            id: 938244106361114644n,
+            name: "mer",
+        },
+    ],
+   
 import { addPreSendListener } from "@api/MessageEvents";
 import { Devs } from "@utils/constants";
 import definePlugin from "@utils/types";
@@ -39,3 +49,8 @@ export default definePlugin({
     }
 }
 );
+    patches: [],
+    // Delete these two below if you are only using code patches
+    start() {},
+    stop() {},
+});
